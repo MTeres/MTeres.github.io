@@ -10,7 +10,7 @@ title: Aí ta na disney
 email: marcus.teres@gmail.com
 description:  Um blog para o dia que eu tiver coragem para escrever algo.
 mensagem: Juro que vou fazer uma pagina aqui.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mteres.github.io" # the base hostname & protocol for your site
 twitter_username: teres93
 github_username:  MTeres
