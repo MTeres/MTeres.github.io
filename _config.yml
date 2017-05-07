@@ -6,10 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: About mcmartin (teres)
+title: Aí ta na disney
 email: marcus.teres@gmail.com
-description:  Ainda não sei que tipo de post terei aqui, porém garanto que não será nada importante! <3 
-baseurl: "/" # the subpath of your site, e.g. /blog
+description:  Um blog para o dia que eu tiver coragem para escrever algo.
+mensagem: Juro que vou fazer uma pagina aqui.
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://mteres.github.io" # the base hostname & protocol for your site
 twitter_username: teres93
 github_username:  MTeres
