@@ -8,6 +8,7 @@
 # Site settings
 title: Aí ta na disney
 email: marcus.teres@gmail.com
+email_label: email
 description:  Um blog para o dia que eu tiver coragem para escrever algo.
 mensagem: Juro que vou fazer uma pagina aqui.
 baseurl: "" # the subpath of your site, e.g. /blog

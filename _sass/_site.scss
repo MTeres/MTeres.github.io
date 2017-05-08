@@ -18,10 +18,18 @@
             font-weight: bold;
             text-transform: uppercase;
             background-color: white;
-            padding: 20px;
+            padding: 5px 30px;
             background-color: #fff;
             transition: box-shadow .25s;
             border-radius: 2px;
+            @media (max-width: 480px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 375px) {
+                font-size: 36px;
+                padding: 5px 15px;
+            }
         }
     }
     
@@ -38,7 +46,11 @@
         overflow: hidden;
         transition: $anim-speed; 
         @extend .z-depth-1;
-        
+
+        @media (max-width: 370px){
+            height: 180px;
+            width: 180px;
+        }
         
         img{
             object-position: center; /* Center the image within the element */
@@ -81,6 +93,14 @@
             font-size: 2rem;
             text-align: left;
             text-align: center;
+            margin-bottom: 30px;
+            @media (max-width: 500px) {
+                font-size: 1.6rem;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 1.4rem;
+            }
         }
     }
     
