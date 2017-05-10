@@ -15,13 +15,24 @@
   transition: box-shadow .25s;
   border-radius: 2px;
   @extend .z-depth-1;
-
-
   .card-title {
     font-size: 24px;
     font-weight: 300;
     &.activator {
       cursor: pointer;
+    }
+
+    &.thumb,.escolaridade{
+      &:before {
+        content: "";
+        display: inline-block;
+        background-size: 100% 100%;
+        height: 30px;
+        width: 30px;
+        margin: 0px 10px 0px 5px;
+        vertical-align: middle;
+        background-image: url(../assets/book.svg);
+      }
     }
   }
 
@@ -146,6 +157,97 @@
     }
     .card-title {
       line-height: 48px;
+    }
+
+    .escolaridade-mid{
+      ul{
+        li{
+          .box{
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+          }
+          img{
+            object-position: center;
+            height: 165px;
+            width: 165px;
+            border-radius: 50%;
+            opacity: 1;
+            transition: 0.3s;
+            padding: 10px;
+            vertical-align: middle;
+            @media (max-width: 950px){
+              height: 140px;
+              width: 140px;
+            }
+
+            @media (max-width: 730px){
+              height: 100px;
+              width: 100px;
+            }
+
+            @media (max-width: 685px){
+              height: 140px;
+              width: 140px;
+            }
+
+            @media (max-width: 410px){
+              height: 100px;
+              width: 100px;
+            }
+          }
+          .desc{
+            display: block;
+            font-size: 13px;
+            text-transform: capitalize;
+            letter-spacing: -1px;
+            @media (max-width: 365px){
+              font-size: 12px;
+            }
+          }
+          .nome{
+            width: 100%;
+            padding: 10px 0 40px 0;
+            font-size: 22px;
+            font-weight: lighter;
+            letter-spacing: -1px;
+
+            &.destaque{
+              letter-spacing: 3px;
+              color: $grey-color;
+              font-weight: bold;
+              
+              @media (max-width: 685px){
+                font-size: 22px;
+                display: inline;
+              }
+
+              @media (max-width: 365px){
+                font-size: 20px;
+              }
+            }
+
+            @media (max-width: 1000px){
+              font-size: 20px;
+            }
+
+            @media (max-width: 950px){
+              font-size: 18px;
+            }
+
+            @media (max-width: 840px){
+              font-size: 15px;
+            }
+
+            @media (max-width: 685px){
+              display: none;
+            }
+          }
+        }
+        @media (max-width: 450px){
+          padding-left: 10px;
+        }
+      }
     }
   }
 
