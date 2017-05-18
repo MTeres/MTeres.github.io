@@ -9,6 +9,52 @@
   background-color: $card-bg-color;
 }
 
+.list-content{
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center;
+  div {
+    display: inline-block;
+    img{
+      display: block;
+      float: left;
+      margin: 10px;
+      width: 250px;
+      height: auto;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      @media (max-width: 950px){
+        width: 220px;
+      }
+      @media (max-width: 820px){
+        width: 200px;
+      }
+
+      @media (max-width: 730px){
+        width: 150px;
+      }
+
+      @media (max-width: 575px){
+        width: 120px;
+      }
+
+      @media (max-width: 480px){
+        width: 240px;
+      }
+
+      @media (max-width: 400px){
+        width: 210px;
+      }
+    }
+      @media (max-width: 480px){
+        display: inline-grid;
+      }
+  }
+}
+
 .list-images{
   margin-top: 20px;
   text-align: center;
