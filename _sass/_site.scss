@@ -1,13 +1,13 @@
 /*------------------------------------------------------------
   Site Style
-------------------------------------------------------------*/
+  ------------------------------------------------------------*/
 
-.site-header{
-    
+  .site-header{
+
     text-align: center;    
 
     .wrapper{
-        
+
         padding-top: 5em;
         padding-bottom: 2em;
         
@@ -74,12 +74,56 @@
     }
 }
 
+.profile-social-links {
+    width: 218px;
+    padding: 0px;
+    font-size: 20px;
+    margin: 0px auto;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-animation: moveIn 1s 3.1s ease forwards;
+    animation: moveIn 1s 3.1s ease forwards;
+}
+
+.profile-social-links li {
+    display: inline-block;
+  list-style: none;
+  margin: -5px 0px 0px 0px;
+  padding: 0px;
+  width: 25%;
+  text-align: center;
+}
+
+.profile-social-links li a {
+  display: inline-block;
+  color: #36464d;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  position: relative;
+  overflow: hidden!important;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.profile-social-links li a i {
+  position: relative;
+  z-index: 1;
+}
+
+.profile-social-links li a img,
+.profile-social-links li a svg {
+  width: 24px;
+}
+
+
 .page-content{ 
     margin: $spacing-unit auto;   
     width: 980px;    
     
     .top{
-        
+
         text-align: center;
         padding: $spacing-unit * 4 $spacing-unit $spacing-unit;       
         
@@ -92,7 +136,6 @@
         p.description{            
             font-size: 2rem;
             text-align: left;
-            text-align: center;
             margin-bottom: 30px;
             @media (max-width: 500px) {
                 font-size: 1.6rem;
@@ -117,7 +160,7 @@
             padding:0;
             
             li{
-                
+
                 padding: 15px 0;
                 border-bottom: #ddd solid 1px;
                 
@@ -128,7 +171,7 @@
                 }
                 
                 a{
-                   
+
                     text-decoration: none;
                     color:#333;
                     font-size: 21px;
@@ -151,7 +194,7 @@
 
 .post{
     .card-content{
-            padding: 80px 20px;
+        padding: 80px 20px;
     }
 }
 
