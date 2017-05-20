@@ -117,6 +117,19 @@
   width: 24px;
 }
 
+.info-basic{
+    text-align: center;
+    width: 100%;
+    h2{
+        margin-bottom: 2px;
+        font-size: 40px;
+    }
+    h3{
+        font-size: 20px;
+        margin: 0px;
+    }
+}
+
 
 .page-content{ 
     margin: $spacing-unit auto;   
