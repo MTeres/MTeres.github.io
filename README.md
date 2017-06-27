@@ -1,2 +1,2 @@
 # Personal page
-[![Twitter](https://img.shields.io/badge/Twitter-@teres93.svg?style=flat)](https://twitter.com/teres93)
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&style=flat-square)](https://twitter.com/teres93)
