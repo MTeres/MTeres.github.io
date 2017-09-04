@@ -18,8 +18,3 @@ github_username:  MTeres
 
 # Build settings
 markdown: kramdown
-
-assets:
-  compress:
-    css: false | true | default - development: false, production: true
-    js: false | true | default - development: false, production: true
