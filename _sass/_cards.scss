@@ -308,6 +308,12 @@
               height: 88px;
               width: 88px;
             }
+
+
+            @media (max-width: 340px) {
+              height: 79px;
+              width: 79px;
+            }
           }
           .desc {
             display: block;
