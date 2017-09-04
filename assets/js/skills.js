@@ -62,12 +62,14 @@ function getXY(i, radius) {
         "y": Math.sin(radOffset +theta * i) * radius*height + height/2};
 }
 
-var hue = [];
+var hue = [200, 200, 200];
 var hueOffset = 100;
 
 for (var s in skills) {
+    console.log(s)
     $(".content").append('<div class="pentagon" id="interests"><div class="header"></div><canvas class="pentCanvas"/></div>');
-    hue[s] = (hueOffset + s * 255/skills.length) % 255;
+    // hue[s] = (hueOffset + s * 255/skills.length) % 255;
+    // console.log(hue)
 }
 
 $(".pentagon").each(function(index){
@@ -80,7 +82,7 @@ $(".pentagon").each(function(index){
     ctx.textAlign="center";
 
     /*** LABEL ***/
-    color = "hsl("+hue[pentagonIndex]+", 100%, 50%)";
+    color = "hsl("+hue[pentagonIndex]+", 18%, 18%)";
     ctx.fillStyle = color;
     ctx.fillText(skills[pentagonIndex].header, width/2, 15);
 
@@ -92,7 +94,7 @@ $(".pentagon").each(function(index){
         ctx.beginPath();
         xy = getXY(i, 0.3);
         colorJitter = 25 + theta*i*2;
-        color = "hsl("+hue[pentagonIndex]+",100%," + colorJitter + "%)";
+        color = "hsl("+hue[pentagonIndex]+",50%," + colorJitter + "%)";
         ctx.fillStyle = color;
         ctx.strokeStyle = color;
         ctx.moveTo(0.5*width, 0.5*height); //center
